@@ -1,0 +1,169 @@
+{
+  "count": 16,
+  "archive": "visible-plots-png-16-299911aafa.zip",
+  "canonical_archive": "visible-plots-png.zip",
+  "sha256": "299911aafaab378961f3aec5f3168804d23e955291d0b0efb288d8eb7130dd48",
+  "scope": "Only plots displayed on the current homepage; interactive plots use their matching PNG.",
+  "images": [
+    {
+      "source": "experiments/focused-five/advanced/neuron-activity.png",
+      "export_name": "01-neuron-activity.png",
+      "size": [
+        2210,
+        1581
+      ],
+      "sha256": "e6864b546897d40ab1e0dd0e03e4437ca47aed8f2a1fd8165064a413a616f54e",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/advanced/weight-history.png",
+      "export_name": "02-weight-history.png",
+      "size": [
+        2210,
+        1581
+      ],
+      "sha256": "468aaf426d19a763aebb6b76174668cae6bc1a04da1b3d36015af8703bccd425",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/advanced/training-path.png",
+      "export_name": "03-training-path.png",
+      "size": [
+        2340,
+        1620
+      ],
+      "sha256": "3673fe86c01af38f9e845bfbe70c3ee03879cb9c6f569d6113dbcecdc0fb3bbc",
+      "interactive": true
+    },
+    {
+      "source": "experiments/focused-five/stats/error.png",
+      "export_name": "04-error.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "53622b1e5d2d957c0e1b632dc4677353f0c73ba2a5a232dfd23fff73f2024f10",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/stats/gap.png",
+      "export_name": "05-gap.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "37a6ef4671b12cb5710e6f1b829585ab7d3debd8b61f68fd57a2bbd0ae9fd5a4",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/stats/learning-rate.png",
+      "export_name": "06-learning-rate.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "9d88dab40656f96d535115a85f330e34e61cf63273ed7bdce1e4942440ea9a6b",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/stats/weight-change.png",
+      "export_name": "07-weight-change.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "20aa059c03aa820c1c5a8528bbf09ec61e1355788324145117fcece610bd2db0",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/stats/predictions.png",
+      "export_name": "08-predictions.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "668410ffc59f0ef6b09606b65314724280f3c71ce9bda19cb4708a97790f770f",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/stats/residuals.png",
+      "export_name": "09-residuals.png",
+      "size": [
+        1530,
+        986
+      ],
+      "sha256": "52790b434e4e152ac4253a95b9d48a51c645eadc5c5639343f87253b4adb659e",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/original-detail-0f5fe333d8de.png",
+      "export_name": "10-original-detail-0f5fe333d8de.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "0f5fe333d8dea5d1aeeba000d2ba27df9efe11930ed752bbaa44296e714d2281",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/original-minimal-e1e862f87c70.png",
+      "export_name": "11-original-minimal-e1e862f87c70.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "e1e862f87c70f2fd63f5c4cec656d0b0de97d3bf48ad4ca2d9532eb7f1b3b47a",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/original-clean-c1dacb1d9592.png",
+      "export_name": "12-original-clean-c1dacb1d9592.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "c1dacb1d95929cb614d33b603b3aab905c28e26c8bbbecc8b0b55250a6c4dc28",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/warm-9fa7deda1758.png",
+      "export_name": "13-warm-9fa7deda1758.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "9fa7deda1758ad6b6de31b7cf5dadffbeaec25df5ea1d68b667c5378912f24d1",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/cool-83d049bd5159.png",
+      "export_name": "14-cool-83d049bd5159.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "83d049bd5159b86f3766a9a258c60a730a240aa140a52b34d78bd7eb3c7017ef",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/variants/mono-0927f1a77a35.png",
+      "export_name": "15-mono-0927f1a77a35.png",
+      "size": [
+        1400,
+        1400
+      ],
+      "sha256": "0927f1a77a35b8d846e20485711c669721e8af0824b3864398cf14a96f474fde",
+      "interactive": false
+    },
+    {
+      "source": "experiments/focused-five/endpoint-soft-bcf049420056.png",
+      "export_name": "16-endpoint-soft-bcf049420056.png",
+      "size": [
+        1800,
+        1275
+      ],
+      "sha256": "bcf049420056fce78250e50f92807cc56ae2a4cc621826e6fc74f6716ae93cfa",
+      "interactive": false
+    }
+  ]
+}

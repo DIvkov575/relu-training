@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MIG training · 120 FPS</title>
+<style>
+body{margin:0;background:#080d1a;color:#dbeafe;font:16px system-ui}main{max-width:1600px;margin:auto;padding:24px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:20px}h1{font-size:26px;margin:0;color:#25d9f8}a{color:#c4b5fd}video{display:block;width:100%;max-height:85vh;background:#080d1a;border-radius:12px}p{color:#94a3b8}
+</style>
+</head>
+<body><main>
+<header><h1>MIG training · 120 FPS</h1><select id="version" aria-label="Video version" style="padding:10px;background:#101a30;color:#dbeafe;border:1px solid #263756;border-radius:8px"><option value="mig-training-top-120fps-10k-neon-10x-40s.mp4">Through step 10,000 · 2× at 40s → 10× · Neon · 120 FPS</option><option value="mig-training-top-120fps-10k-ramp.mp4">Through step 10,000 · Linear speed ramp · 120 FPS</option><option value="mig-training-top-120fps-30k-2x.mp4">Through step 30,000 · 2× opening speed · 120 FPS</option><option value="mig-training-top-120fps-65k-slow.mp4">Through step 65,000 · Slower · 120 FPS</option><option value="mig-training-top-120fps-75k.mp4">Through step 75,000 · 120 FPS</option><option value="mig-training-top-120fps.mp4">Full run · 120 FPS</option><option value="mig-training-60fps.mp4">Perspective · 60 FPS</option></select><a id="download" href="mig-training-top-120fps-10k-neon-10x-40s.mp4" download>Download MP4 ↗</a><a href="direct.html" target="_blank" rel="noopener">Direct weight path ↗</a></header>
+<video src="mig-training-top-120fps-10k-neon-10x-40s.mp4" controls autoplay muted loop playsinline preload="auto"></video>
+<p>1080p · Top-down · Through step 10,000 · 1 min 39 sec · 2× at 40 seconds → 10×</p>
+<script>
+document.getElementById('version').onchange = function() {
+  const video = document.querySelector('video'), time = video.currentTime;
+  video.src = this.value;
+  document.getElementById('download').href = this.value;
+  document.querySelector('h1').textContent = 'MIG training · ' + (this.value.includes('120fps') ? '120' : '60') + ' FPS';
+  document.querySelector('p').textContent = '1080p · 36 seconds';
+  video.addEventListener('loadedmetadata', () => {video.currentTime=Math.min(time,video.duration);document.querySelector('p').textContent='1080p · '+Math.round(video.duration)+' seconds';video.play();}, {once:true});
+};
+</script></main><script src="render-status.js"></script></body>
+</html>

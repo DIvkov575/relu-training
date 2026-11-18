@@ -1,0 +1,88 @@
+{
+  "variations": [
+    {
+      "image": "terrain-pca-oblique.png",
+      "title": "Training-path PCA slice \u00b7 oblique",
+      "description": "Thin light trace follows checkpoints projected into the PCA plane; heights evaluate projected models. Terrain height and color use linear RMSE, with flat faces and visible measured-grid edges; colors retain one fixed range across both angles.",
+      "kind": "3d-terrain",
+      "plane": "pca",
+      "logscale": false,
+      "angle": {
+        "elevation": 35,
+        "azimuth": -55
+      },
+      "loss_range": [
+        0.07532825057214594,
+        2.798500136286053
+      ],
+      "grid_count": 129
+    },
+    {
+      "image": "terrain-pca-reverse.png",
+      "title": "Training-path PCA slice \u00b7 reverse view",
+      "description": "Thin light trace follows checkpoints projected into the PCA plane; heights evaluate projected models. Terrain height and color use linear RMSE, with flat faces and visible measured-grid edges; colors retain one fixed range across both angles.",
+      "kind": "3d-terrain",
+      "plane": "pca",
+      "logscale": false,
+      "angle": {
+        "elevation": 44,
+        "azimuth": 130
+      },
+      "loss_range": [
+        0.07532825057214594,
+        2.798500136286053
+      ],
+      "grid_count": 129
+    },
+    {
+      "image": "terrain-local-oblique.png",
+      "title": "Local slice around final weights \u00b7 oblique",
+      "description": "Same architecture with weight changes up to 50% of each neuron\u2019s weight-vector size along each axis; biases stay fixed. Height and color show linear RMSE on 16 fixed data points.",
+      "kind": "3d-terrain",
+      "plane": "local",
+      "logscale": false,
+      "angle": {
+        "elevation": 35,
+        "azimuth": -55
+      },
+      "loss_range": [
+        0.07579246731844422,
+        30.246215821300584
+      ],
+      "grid_count": 129
+    },
+    {
+      "image": "terrain-local-reverse.png",
+      "title": "Local slice around final weights \u00b7 reverse view",
+      "description": "Same architecture with weight changes up to 50% of each neuron\u2019s weight-vector size along each axis; biases stay fixed. Height and color show linear RMSE on 16 fixed data points.",
+      "kind": "3d-terrain",
+      "plane": "local",
+      "logscale": false,
+      "angle": {
+        "elevation": 44,
+        "azimuth": 130
+      },
+      "loss_range": [
+        0.07579246731844422,
+        30.246215821300584
+      ],
+      "grid_count": 129
+    }
+  ],
+  "methods": {
+    "pca": {
+      "method": "All 2,353 weights and biases included, activation slope fixed. PCA fitted to 199 checkpoints nearest 200 uniformly spaced training steps; all 500 checkpoints projected onto its top two axes. Plane origin is final weights. No retraining or parameter normalization. Grid samples the full models in this plane. Resampled at 129 \u00d7 129; trajectory metadata and coordinate extent preserved exactly.",
+      "sample_count": 16,
+      "grid_count": 129,
+      "center_rmse": 0.07579246731844422
+    },
+    "local": {
+      "method": "theta(alpha,beta) = theta_final + alpha*d1 + beta*d2. Seed 42; each direction row matches its trained filter norm; orthogonal per-filter directions; biases fixed. Alpha and beta span [-0.5, 0.5].",
+      "sample_count": 16,
+      "grid_count": 129,
+      "center_rmse": 0.07579246731844422
+    }
+  },
+  "notes": "Measured loss values only; no noise or artificial surface detail. Height and viridis color both encode linear RMSE. Flat face colors, no illumination shading, and visible measured-grid edges. Horizontal coordinates retain their within-plane aspect ratio; vertical scale is normalized independently for each plane. Color and height ranges are identical across the two camera angles of each plane, but differ between planes. PCA path evaluates projected checkpoints, with a 0.3% display-height lift to avoid surface overlap. Final checkpoint is a small light dot.",
+  "background": "#100d14"
+}

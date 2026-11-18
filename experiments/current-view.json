@@ -1,0 +1,5 @@
+{
+  "model": "experiments/focused-five/model.json",
+  "gallery": "experiments/focused-five/rough-styles.json",
+  "landscape": "experiments/focused-five/endpoint-soft.png"
+}

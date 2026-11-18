@@ -1,0 +1,106 @@
+{
+  "weights": "weights.npz",
+  "trained_steps": 40000,
+  "grid": [
+    121,
+    161
+  ],
+  "x_limits": [
+    -3.2,
+    3.2
+  ],
+  "y_limits": [
+    -2.1,
+    2.1
+  ],
+  "color": "Linear speed magnitude of trained vector field; fixed scale",
+  "speed_max": 3.9392385482788086,
+  "speed_absolute_max": 4.942054271697998,
+  "clipped_percent": 0.9999975556158505,
+  "plots": [
+    {
+      "time": 0.0,
+      "image": "vector-field-00.png"
+    },
+    {
+      "time": 0.05,
+      "image": "vector-field-01.png"
+    },
+    {
+      "time": 0.1,
+      "image": "vector-field-02.png"
+    },
+    {
+      "time": 0.15000000000000002,
+      "image": "vector-field-03.png"
+    },
+    {
+      "time": 0.2,
+      "image": "vector-field-04.png"
+    },
+    {
+      "time": 0.25,
+      "image": "vector-field-05.png"
+    },
+    {
+      "time": 0.30000000000000004,
+      "image": "vector-field-06.png"
+    },
+    {
+      "time": 0.35000000000000003,
+      "image": "vector-field-07.png"
+    },
+    {
+      "time": 0.4,
+      "image": "vector-field-08.png"
+    },
+    {
+      "time": 0.45,
+      "image": "vector-field-09.png"
+    },
+    {
+      "time": 0.5,
+      "image": "vector-field-10.png"
+    },
+    {
+      "time": 0.55,
+      "image": "vector-field-11.png"
+    },
+    {
+      "time": 0.6000000000000001,
+      "image": "vector-field-12.png"
+    },
+    {
+      "time": 0.65,
+      "image": "vector-field-13.png"
+    },
+    {
+      "time": 0.7000000000000001,
+      "image": "vector-field-14.png"
+    },
+    {
+      "time": 0.75,
+      "image": "vector-field-15.png"
+    },
+    {
+      "time": 0.8,
+      "image": "vector-field-16.png"
+    },
+    {
+      "time": 0.8500000000000001,
+      "image": "vector-field-17.png"
+    },
+    {
+      "time": 0.9,
+      "image": "vector-field-18.png"
+    },
+    {
+      "time": 0.9500000000000001,
+      "image": "vector-field-19.png"
+    },
+    {
+      "time": 1.0,
+      "image": "vector-field-20.png"
+    }
+  ]
+}

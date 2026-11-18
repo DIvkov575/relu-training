@@ -1,0 +1,31 @@
+{
+  "model": [
+    2,
+    16,
+    16,
+    16,
+    16,
+    16,
+    1
+  ],
+  "training_steps": 20000,
+  "sample_count": 4,
+  "notes": "Line shows where saved training positions land in this view; its height follows the displayed surface. Training moves in more ways than these two axes show. Each grid point measures actual error on four newly selected training examples. Changing examples between neighboring points creates most of the jaggedness; this is a noisy error estimate, not proof that the full-data error surface is jagged.",
+  "variations": [
+    {
+      "image": "landscape-path.png",
+      "title": "Small weight changes \u00b7 training path",
+      "description": "Line shows where saved training positions land in this view; its height follows the displayed surface. Training moves in more ways than these two axes show.",
+      "plane": "near",
+      "kind": "3d-terrain",
+      "sample_count": 4,
+      "angle": {
+        "elevation": 35,
+        "azimuth": -55
+      },
+      "local_extent": 0.15
+    }
+  ],
+  "path_data": "landscape-path.json",
+  "background": "#100d14"
+}

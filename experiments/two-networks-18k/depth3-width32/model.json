@@ -1,0 +1,27 @@
+{
+  "widths": [
+    32,
+    32,
+    32
+  ],
+  "parameters": 2241,
+  "step": 18000,
+  "regions": 6970,
+  "train_rmse": 0.12390767098736846,
+  "heldout_rmse": 0.1266116475109668,
+  "training_samples": 40000,
+  "image": "model.png",
+  "layer_edges": true,
+  "edge_widths_px": [
+    2.8,
+    1.4,
+    0.55
+  ],
+  "edge_counts_by_layer": [
+    3722,
+    4018,
+    6117
+  ],
+  "training_endpoint": 18000,
+  "hidden_layers": 3
+}

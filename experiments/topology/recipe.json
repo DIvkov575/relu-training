@@ -1,0 +1,54 @@
+{
+  "style": "Density contours of actual samples integrated through the trained flow model",
+  "trajectory_source": "experiments/flow-mig/spacetime-paths.npz",
+  "sample_count": 16384,
+  "trained_steps": 40000,
+  "phases": [
+    0,
+    0.7050000000000001,
+    0.86,
+    1
+  ],
+  "indices": [
+    0,
+    169,
+    206,
+    240
+  ],
+  "rotation_degrees": -90,
+  "bandwidths": [
+    null,
+    0.18,
+    0.15,
+    0.12
+  ],
+  "additional_gaussian_sigma": 0.08,
+  "prior": "Analytic density of the isotropic Gaussian used to initialize the trained flow",
+  "levels": [
+    [
+      0.019286738154303727,
+      0.03375179177003153,
+      0.04821684538575932,
+      0.06147647786684313
+    ],
+    [
+      0.011919597816804468,
+      0.04469849181301675,
+      0.08343718471763129,
+      0.15197487216425698
+    ],
+    [
+      0.012497881881259085,
+      0.04686705705472157,
+      0.0874851731688136,
+      0.15934799398605334
+    ],
+    [
+      0.013622458308543401,
+      0.05108421865703775,
+      0.09535720815980382,
+      0.17368634343392836
+    ]
+  ],
+  "reference": "https://stevengong.co/attachments/Screenshot-2025-08-17-at-4.59.48-PM.png"
+}

@@ -1,0 +1,16 @@
+{
+  "plots": [
+    {
+      "image": "training-path.png",
+      "interactive": "training-path.html",
+      "title": "A journey through 1,153 weights",
+      "description": "Rotate the actual training path: height is error on the same 20,000 unseen examples at every saved checkpoint; color is training step. Two viewing directions retain 90.3% of saved weight movement. The rest is hidden in this view. Error height uses a logarithmic scale."
+    }
+  ],
+  "data": "trajectory.json",
+  "viewing_directions_explained_variance": [
+    0.7440275187191141,
+    0.1587472107291998
+  ],
+  "checkpoint_sha256": "8fd9d56c54fc490f6a7c4f5dd0e2c0403dafbf36211fc426403b4df4c3c1b471"
+}

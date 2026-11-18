@@ -1,0 +1,105 @@
+{
+  "variations": [
+    {
+      "image": "rough-near-oblique.png",
+      "title": "Smaller weight changes \u00b7 oblique view",
+      "description": "Error on four examples per spot. Changing the examples creates the sharp peaks.",
+      "kind": "3d-terrain",
+      "plane": "near",
+      "logscale": false,
+      "angle": {
+        "elevation": 35,
+        "azimuth": -55
+      },
+      "loss_range": [
+        0.01240356707006862,
+        3.4528129357592343
+      ],
+      "grid_count": 129,
+      "sample_count": 4
+    },
+    {
+      "image": "rough-near-reverse.png",
+      "title": "Smaller weight changes \u00b7 reverse view",
+      "description": "Error on four examples per spot. Changing the examples creates the sharp peaks.",
+      "kind": "3d-terrain",
+      "plane": "near",
+      "logscale": false,
+      "angle": {
+        "elevation": 44,
+        "azimuth": 130
+      },
+      "loss_range": [
+        0.01240356707006862,
+        3.4528129357592343
+      ],
+      "grid_count": 129,
+      "sample_count": 4
+    },
+    {
+      "image": "rough-wide-oblique.png",
+      "title": "Larger weight changes \u00b7 oblique view",
+      "description": "Error on four examples per spot. Changing the examples creates the sharp peaks.",
+      "kind": "3d-terrain",
+      "plane": "wide",
+      "logscale": false,
+      "angle": {
+        "elevation": 35,
+        "azimuth": -55
+      },
+      "loss_range": [
+        0.022697313919755532,
+        42.521417976911934
+      ],
+      "grid_count": 129,
+      "sample_count": 4
+    },
+    {
+      "image": "rough-wide-reverse.png",
+      "title": "Larger weight changes \u00b7 reverse view",
+      "description": "Error on four examples per spot. Changing the examples creates the sharp peaks.",
+      "kind": "3d-terrain",
+      "plane": "wide",
+      "logscale": false,
+      "angle": {
+        "elevation": 44,
+        "azimuth": 130
+      },
+      "loss_range": [
+        0.022697313919755532,
+        42.521417976911934
+      ],
+      "grid_count": 129,
+      "sample_count": 4
+    }
+  ],
+  "model": [
+    2,
+    36,
+    36,
+    36,
+    36,
+    24,
+    24,
+    1
+  ],
+  "model_sha256": "c8e149eaf212f0a0b46a9885bb7f614d848ba39282ad003c76473b1edfb8c3ec",
+  "training_steps": 25000,
+  "sample_count": 4,
+  "notes": "Each grid point measures actual error on four newly selected training examples. Changing examples between neighboring points creates most of the jaggedness; this is a noisy error estimate, not proof that the full-data error surface is jagged.",
+  "summaries": [
+    {
+      "local_extent": 0.15,
+      "roughness": 0.2891162630052712,
+      "fixed_four_roughness": 0.0012214286943066873,
+      "center_rmse": 0.022697313919755532
+    },
+    {
+      "local_extent": 0.5,
+      "roughness": 2.2538108307682663,
+      "fixed_four_roughness": 0.03182487984450799,
+      "center_rmse": 0.022697313919755532
+    }
+  ],
+  "background": "#100d14"
+}

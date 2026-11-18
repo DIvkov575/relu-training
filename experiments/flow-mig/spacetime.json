@@ -1,0 +1,24 @@
+{
+  "points": 16384,
+  "times": 241,
+  "weights": "weights.npz",
+  "trained_steps": 40000,
+  "velocity": "Mean of predicted component among integrated points in each position/time bin; bins with fewer than 5 points masked",
+  "paths": "Actual midpoint-integrated trajectories of the trained 2D field, projected onto x or y",
+  "density": "Counts divided by total sample count and bin width; no per-time normalization",
+  "color_limits": {
+    "velocity": [
+      -3.664251922607422,
+      3.664251922607422
+    ],
+    "density": [
+      0,
+      0.4812939961751357
+    ]
+  },
+  "projection_note": "Horizontal position reflected to align with clockwise-rotated MIG; M at top, I at center, G at bottom. Letter bases face the incoming flow.",
+  "references": [
+    "https://peterroelants.github.io/images/notebook_outputs/diffusion_flow_matching/flow_matching_intro/figure-0018-00-a2d496459e94.png",
+    "https://peterroelants.github.io/images/notebook_outputs/diffusion_flow_matching/flow_matching_intro/figure-0036-00-fa38154cebd7.png"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "checkpoint": "/home/cig/.local/state/relu-viz/mig-16-16-16-16-16-20000.pkl",
+  "checkpoint_sha256": "8fd9d56c54fc490f6a7c4f5dd0e2c0403dafbf36211fc426403b4df4c3c1b471",
+  "checkpoint_unchanged": true,
+  "step": 20000,
+  "hidden": [
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "region_count": 7097,
+  "total_tile_area": 35.999999998013976,
+  "domain": [
+    [
+      -3,
+      3
+    ],
+    [
+      -3,
+      3
+    ]
+  ],
+  "grid_size": 501,
+  "grid_rmse": 0.05298593630130021,
+  "gradient_method": "Exact chain rule at interior point of each exact activation region",
+  "gradient_max_verification_error": 4.378259532700213e-09,
+  "plots": [
+    {
+      "image": "error-map.png",
+      "title": "Prediction error",
+      "description": "Red means predicted too high; blue means too low. Both colors use the same scale. Measured across the input square; no values clipped.",
+      "max_absolute_error": 0.7349622095629842,
+      "mean_error": -0.0021279307019908857,
+      "grid_size": 501
+    },
+    {
+      "image": "slope-map.png",
+      "title": "Surface steepness",
+      "description": "Dark pieces are flat; bright pieces are steep. Each piece uses the exact slope of its model plane. Color compresses the large range so gentle slopes remain visible; no values clipped.",
+      "min_slope": 0.0003795419918573619,
+      "max_slope": 116.24611190785704,
+      "flat_region_count": 0
+    },
+    {
+      "image": "tile-size-map.png",
+      "title": "Size of each flat piece",
+      "description": "Every colored shape is an actual model piece: 7,097 in all. Dark means small, light means large; color uses a log scale.",
+      "min_area": 1.0409853920707868e-09,
+      "max_area": 1.1595753738262893,
+      "median_area": 0.0004801666852660702,
+      "area_units": "squared input units",
+      "color_scale": "logarithmic"
+    }
+  ]
+}

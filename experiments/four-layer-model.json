@@ -1,0 +1,18 @@
+{
+  "widths": [
+    24,
+    24,
+    24,
+    24
+  ],
+  "parameters": 1897,
+  "step": 20000,
+  "regions": 8130,
+  "train_rmse": 0.06656699535178655,
+  "heldout_rmse": 0.06948311872394294,
+  "training_samples": 40000,
+  "image": "four-layer-model.png",
+  "target_step": 20000,
+  "training_endpoint": 20000,
+  "hidden_layers": 4
+}

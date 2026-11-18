@@ -1,0 +1,64 @@
+{
+  "plots": [
+    {
+      "image": "error.png",
+      "title": "Training and unseen-example error",
+      "description": "Recorded batch error and its 200-step average, compared with saved-checkpoint error on all training examples and a fixed set of 20,000 unseen examples. Vertical axis uses a logarithmic scale."
+    },
+    {
+      "image": "gap.png",
+      "title": "Gap between unseen and training examples",
+      "description": "Positive values mean the saved network has more error on the fixed unseen examples. The same examples are used at every checkpoint."
+    },
+    {
+      "image": "learning-rate.png",
+      "title": "Learning-rate schedule",
+      "description": "Reconstructed from the verified training settings: 0.003 for the first 4,000 steps, then a gradual decrease to 0.0003 at step 20,000. This value was not logged separately."
+    },
+    {
+      "image": "weight-change.png",
+      "title": "Changes in each layer",
+      "description": "Straight-line distance between consecutive saved weight and offset values, divided by elapsed steps. This is checkpoint movement, not gradient size or the full distance traveled between checkpoints."
+    },
+    {
+      "image": "predictions.png",
+      "title": "Predicted versus correct elevation",
+      "description": "Final network predictions on the same 20,000 unseen examples. The dashed line marks exact agreement; color counts examples in each small cell on a logarithmic scale."
+    },
+    {
+      "image": "residuals.png",
+      "title": "Distribution of final errors",
+      "description": "All 20,000 unseen examples. Negative values are predictions that are too low; positive values are predictions that are too high."
+    }
+  ],
+  "metrics": {
+    "final_training_rmse": 0.07035268668174337,
+    "final_heldout_rmse": 0.07158453493133954,
+    "heldout_mean_error": -0.003800346976874623,
+    "heldout_mean_absolute_error": 0.042986360462918864,
+    "heldout_absolute_error_95th_percentile": 0.153046869257731,
+    "final_gap": 0.0012318482495961708,
+    "training_steps": 20000,
+    "snapshot_count": 500
+  },
+  "methods": {
+    "checkpoint_sha256": "8fd9d56c54fc490f6a7c4f5dd0e2c0403dafbf36211fc426403b4df4c3c1b471",
+    "heldout_seed": 7,
+    "heldout_count": 20000,
+    "training_count": 40000,
+    "hidden_widths": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "no_retraining": true,
+    "checkpoint_error_evaluation": "Same fixed held-out examples for every saved state; computed after training.",
+    "snapshot_timing": "Intermediate recorded step numbers precede that update; x-axis uses completed updates (recorded step minus one). Final snapshot follows all 20,000 updates.",
+    "history_timing": "Batch RMSE is recorded before each update; plotted against completed updates starting at zero.",
+    "learning_rate": "Reconstructed from verified trainer configuration: .003, exponential decay after 20% of steps to .0003.",
+    "weight_changes": "Euclidean distance of weights and offsets between snapshots divided by completed-update interval; not gradients or optimizer update magnitudes."
+  },
+  "data": "data.json"
+}

@@ -1,0 +1,100 @@
+{
+  "layers": [
+    {
+      "image": "layer-1.png",
+      "title": "Layer 1 cuts",
+      "description": "Only boundaries introduced by layer 1; 2,078 segments. These are cuts in the final network, not a separate prediction from this layer.",
+      "layer": 1,
+      "boundary_segments": 2078,
+      "actual_step": 20000
+    },
+    {
+      "image": "layer-2.png",
+      "title": "Layer 2 cuts",
+      "description": "Only boundaries introduced by layer 2; 2,026 segments. These are cuts in the final network, not a separate prediction from this layer.",
+      "layer": 2,
+      "boundary_segments": 2026,
+      "actual_step": 20000
+    },
+    {
+      "image": "layer-3.png",
+      "title": "Layer 3 cuts",
+      "description": "Only boundaries introduced by layer 3; 2,992 segments. These are cuts in the final network, not a separate prediction from this layer.",
+      "layer": 3,
+      "boundary_segments": 2992,
+      "actual_step": 20000
+    },
+    {
+      "image": "layer-4.png",
+      "title": "Layer 4 cuts",
+      "description": "Only boundaries introduced by layer 4; 2,915 segments. These are cuts in the final network, not a separate prediction from this layer.",
+      "layer": 4,
+      "boundary_segments": 2915,
+      "actual_step": 20000
+    },
+    {
+      "image": "layer-5.png",
+      "title": "Layer 5 cuts",
+      "description": "Only boundaries introduced by layer 5; 4,126 segments. These are cuts in the final network, not a separate prediction from this layer. Fifth-layer boundaries are included here for inspection.",
+      "layer": 5,
+      "boundary_segments": 4126,
+      "actual_step": 20000
+    }
+  ],
+  "training": [
+    {
+      "image": "train-1005.png",
+      "title": "Step 1,005",
+      "description": "Requested 1,000; actual saved checkpoint 1,005. Same elevation colors in every frame.",
+      "requested_step": 1000,
+      "actual_step": 1005,
+      "regions": 4881,
+      "train_rmse": 0.19483735115673145,
+      "heldout_rmse": 0.1972055691511211
+    },
+    {
+      "image": "train-5025.png",
+      "title": "Step 5,025",
+      "description": "Requested 5,000; actual saved checkpoint 5,025. Same elevation colors in every frame.",
+      "requested_step": 5000,
+      "actual_step": 5025,
+      "regions": 5920,
+      "train_rmse": 0.10688903356775505,
+      "heldout_rmse": 0.10792110160633929
+    },
+    {
+      "image": "train-10000.png",
+      "title": "Step 10,000",
+      "description": "Requested 10,000; actual saved checkpoint 10,000. Same elevation colors in every frame.",
+      "requested_step": 10000,
+      "actual_step": 10000,
+      "regions": 6560,
+      "train_rmse": 0.08547742051013738,
+      "heldout_rmse": 0.08599455701821533
+    },
+    {
+      "image": "train-20000.png",
+      "title": "Step 20,000",
+      "description": "Requested 20,000; actual saved checkpoint 20,000. Same elevation colors in every frame.",
+      "requested_step": 20000,
+      "actual_step": 20000,
+      "regions": 7097,
+      "train_rmse": 0.07035268668174337,
+      "heldout_rmse": 0.07158453493133954
+    }
+  ],
+  "model_sha256": "8fd9d56c54fc490f6a7c4f5dd0e2c0403dafbf36211fc426403b4df4c3c1b471",
+  "model_widths": [
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "final_step": 20000,
+  "color_range": [
+    0.0,
+    1.2
+  ],
+  "notes": "No retraining or weight interpolation. Layer panels show exact cuts in the final network, with every layer visible in its own panel. Training panels use nearest real saved checkpoints; all share the same elevation colors. Fifth-layer lines are hidden only in the training strip, matching the main model image."
+}

@@ -1,0 +1,39 @@
+{
+  "image": "landscape-zoom.png",
+  "image_size": [
+    1800,
+    1275
+  ],
+  "path_bbox_px": [
+    625.7897712922777,
+    382.5,
+    1174.2102287077225,
+    892.5
+  ],
+  "path_occupancy": 0.4,
+  "target_occupancy": 0.4,
+  "occupancy_definition": "Maximum of path bounding-box width/image width and height/image height.",
+  "source_path_data": "experiments/focused-five/landscape-path.json",
+  "source_path_sha256": "d2e7c2c75e2f9b1cd53b25eb3ae839e9fe4cb999160803e40e3372de0d0edfe5",
+  "source_grid_sha256": "d5c995ddc8afa06ddd5e5b87a9a8ecf916d0f05667b798e67910e6916f2c004d",
+  "grid_unchanged": true,
+  "rendered_grid_shape": [
+    47,
+    83
+  ],
+  "rendered_grid_x_indices": [
+    31,
+    113
+  ],
+  "rendered_grid_y_indices": [
+    36,
+    82
+  ],
+  "camera": {
+    "elevation": 35,
+    "azimuth": -55
+  },
+  "notes": "Line shows where saved training positions land in this view; its height follows the displayed surface. Training moves in more ways than these two axes show. Close crop uses the same saved grid and path. Colors and height proportions match the original terrain; no new losses were measured.",
+  "path_height_lift": 0.008,
+  "saved_checkpoint_count": 500
+}

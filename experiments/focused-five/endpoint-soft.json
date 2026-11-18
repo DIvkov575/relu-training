@@ -1,0 +1,18 @@
+{
+  "image": "endpoint-soft.png",
+  "source_grid": "experiments/focused-five/landscape-grid.json",
+  "source_grid_sha256": "d5c995ddc8afa06ddd5e5b87a9a8ecf916d0f05667b798e67910e6916f2c004d",
+  "raw_measurements_unchanged": true,
+  "display_smoothing_sigma_cells": 0.45,
+  "original_view_scale": 0.9,
+  "path_visible": false,
+  "endpoint_visible": false,
+  "endpoint": {
+    "x": 0,
+    "y": 0,
+    "training_step": 20000,
+    "displayed_rmse": 0.07416364300307654,
+    "measured_rmse": 0.06511927942317897
+  },
+  "notes": "Light Gaussian smoothing applied only to displayed terrain heights and colors. Raw measurements and trained model are unchanged. No path or endpoint marker is drawn."
+}

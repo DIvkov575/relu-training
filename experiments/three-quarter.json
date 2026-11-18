@@ -1,0 +1,110 @@
+{
+  "color_range": [
+    0.0,
+    1.2000000000000002
+  ],
+  "heldout_seed": 7,
+  "heldout_count": 20000,
+  "models": [
+    {
+      "widths": [
+        48,
+        48,
+        32
+      ],
+      "parameters": 4097,
+      "step": 100000,
+      "regions": 13510,
+      "train_rmse": 0.030430668484628304,
+      "heldout_rmse": 0.03279478805800095,
+      "training_samples": 40000,
+      "image": "original.png"
+    },
+    {
+      "widths": [
+        36,
+        36,
+        24
+      ],
+      "parameters": 2353,
+      "step": 25000,
+      "regions": 7226,
+      "train_rmse": 0.07622806302105574,
+      "heldout_rmse": 0.07961883989908658,
+      "training_samples": 40000,
+      "image": "three-quarter-terrain.png",
+      "palette": "viridis .16\u20131; linear average elevation"
+    }
+  ],
+  "offsets": [
+    {
+      "widths": [
+        36,
+        36,
+        24
+      ],
+      "parameters": 2353,
+      "step": 24496,
+      "regions": 7216,
+      "train_rmse": 0.0777361860011147,
+      "heldout_rmse": 0.08043491730604012,
+      "training_samples": 40000,
+      "image": "three-quarter-minus-500.png",
+      "requested_offset": 500,
+      "target_step": 24500,
+      "actual_offset": 504
+    },
+    {
+      "widths": [
+        36,
+        36,
+        24
+      ],
+      "parameters": 2353,
+      "step": 23992,
+      "regions": 7226,
+      "train_rmse": 0.0778481973406883,
+      "heldout_rmse": 0.0807892923788283,
+      "training_samples": 40000,
+      "image": "three-quarter-minus-1000.png",
+      "requested_offset": 1000,
+      "target_step": 24000,
+      "actual_offset": 1008
+    },
+    {
+      "widths": [
+        36,
+        36,
+        24
+      ],
+      "parameters": 2353,
+      "step": 22986,
+      "regions": 7227,
+      "train_rmse": 0.0779932709180641,
+      "heldout_rmse": 0.08083378493393016,
+      "training_samples": 40000,
+      "image": "three-quarter-minus-2000.png",
+      "requested_offset": 2000,
+      "target_step": 23000,
+      "actual_offset": 2014
+    }
+  ],
+  "display_model": {
+    "widths": [
+      36,
+      36,
+      24
+    ],
+    "parameters": 2353,
+    "step": 19966,
+    "regions": 7225,
+    "train_rmse": 0.08277607186912603,
+    "heldout_rmse": 0.08543551769871516,
+    "training_samples": 40000,
+    "image": "three-quarter-step20000-terrain.png",
+    "requested_offset": 5000,
+    "target_step": 20000,
+    "actual_offset": 5034,
+    "palette": "viridis .16\u20131; linear average elevation"
+  }
+}

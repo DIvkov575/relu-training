@@ -1,0 +1,33 @@
+{
+  "variations": [
+    {
+      "image": "path-contour.png",
+      "title": "Contour map",
+      "description": "All 500 checkpoints projected onto two PCA axes. Background loss belongs to models in that plane; it is not the actual checkpoint loss.",
+      "kind": "2d-contour"
+    },
+    {
+      "image": "path-actual-2d.png",
+      "title": "Measured loss profile",
+      "description": "PC1 against actual loss, evaluated at all 500 original checkpoints on the fixed training subset. Vertical axis is logarithmic RMSE.",
+      "kind": "2d-actual-loss"
+    },
+    {
+      "image": "path-actual-3d.png",
+      "title": "Actual-loss ribbon",
+      "description": "The same projected checkpoint positions, lifted by their actual full-model loss. No loss surface is drawn because checkpoints generally lie outside the PCA plane.",
+      "kind": "3d-actual-loss"
+    },
+    {
+      "image": "path-surface-3d.png",
+      "title": "Projected loss surface",
+      "description": "41 \u00d7 41 sampled PCA-plane surface. Path heights evaluate each checkpoint after projection into the plane; these differ from actual checkpoint losses. Height uses log10 RMSE.",
+      "kind": "3d-projected-loss"
+    }
+  ],
+  "method": "All 2,353 weights and biases included, activation slope fixed. PCA fitted to 199 checkpoints nearest 200 uniformly spaced training steps; all 500 checkpoints projected onto its top two axes. Plane origin is final weights. No retraining or parameter normalization. Grid samples the full models in this plane.",
+  "notes": "The two PCA axes capture 90.1% of the variance of the 199 fit checkpoints. All 500 saved checkpoints are displayed. Loss uses the same fixed 4,096-point training subset, not held-out data. Step 1 is saved before its first update. Colors show training step; paths join saved checkpoints and do not evaluate intervening models.",
+  "parameter_count": 2353,
+  "sample_count": 4096,
+  "snapshot_count": 500
+}
